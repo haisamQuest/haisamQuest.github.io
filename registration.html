@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Class</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    
+    <div class="background">
+        <ul>
+            <li class="topnav-right"><a class="active" href="registration.html">Registration</a></li>
+            <li class="topnav-right"><a href="login.html">Login</a></li>
+            </li>
+        </ul>
+        
+    <div class="pgLayout">
+    <form autocomplete="on">
+        <div class="userTypeFlex">
+            <input type="radio" name="Administration" class="userType" value="student"> Student
+            <input type="radio" name="Administration" class="userType" value="teacher"> Teacher<br><br>
+        </div>
+        <label for="ID">ID:</label><br>
+        <input type="alphanumeric" id="ID" placeholder="Enter your National ID"><br><br>
+        <label for="class">Quran Class: </label><br>
+        <!--Teaching at/ studying at-->
+        <select id="class">
+            <option value="Vinavee">Vinavee</option>
+            <option value="Iyaaru">Iyaaru </option>            
+            <option value="Markaz">Markaz </option>
+            <option value="Asaas">Asaas </option>      
+            <option value="Private" selected>Private</option>
+        </select></br></br>
+        <label for="password">Password: </label></br>
+        <input type="password" id="password" required ></br><br>
+        <label for="email address">Email Address: </label></br>
+        <input type=""><br><br>
+        <label for="name">Name: </label><br>
+        <input type="text" id="name"><br><br>
+        <label for="DOB">DOB: </label><br>
+        <input type="date"><br><br>
+        <label for="PAddress">Permanent Address: </label><br>
+        <textarea name="Permanent Address" id="PAddress" cols="30" rows="3"></textarea><br><br>
+        <label for="mobile">Mobile Number: </label><br>
+        <input type="numeric" required minlength="7" maxlength="7" id="mobile"><br><br>
+        <label for="occupation">Occupation: </label><br>
+        <select id="occupation">
+            <option value="Teacher" selected>Teacher</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Student">Student</option>
+            <option value="Accountant">Accountant</option>
+            <option value="stupid_job">Ahsan</option>
+        </select><br><br>
+        <label for="PlaceOfStudy"></label>
+        <button>Submit</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

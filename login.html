@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  <div class="background">
+    <ul>
+      <li class="topnav-right" ><a class="active" href="login.html">Login</a></li>
+    </ul>
+    </div> 
+
+  <h2 class="loginheading">Login to access your account details</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: center;">Login</button>
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--  <img src="quranBG.jpg" alt="Avatar" class="avatar">-->
+      </div>
+  
+      <div class="container">
+        <div class="userTypeFlex">
+        <input type="radio" name="Administration" value="student"> Student
+        <input type="radio" name="Administration" value="teacher"> Teacher
+        <input type="radio" name="Administration" value="parent"> Parent<br><br>
+      </div>  
+        <label for="uname"><b>Username</b></label><br>
+        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+  
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+            <button type="submit" class="loginAlign"> Login</button><a href="registration.html">
+            <button type="button" class="signupAlign" class="button-signup">New Signup</button></a><br>
+        <label>
+          <input type="checkbox" checked="unchecked" name="remember"> Remember me
+          <span class="forgotPsw">Forgot <a href="forgotPsw.html"> Password?</a></span>
+        </label>
+      </div>
+    </form>
+  </div>  
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>
